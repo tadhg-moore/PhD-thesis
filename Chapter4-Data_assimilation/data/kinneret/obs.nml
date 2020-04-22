@@ -1,0 +1,113 @@
+&sprofile
+   s_prof_method = 2
+   s_analyt_method = 1
+   z_s1 = 30
+   s_1 = 20
+   z_s2 = 40
+   s_2 = 15
+   s_obs_NN = 0.000256
+   s_prof_file = 's_prof.dat'
+   SRelaxTauM = 1e+15
+   SRelaxTauB = 1e+15
+   SRelaxTauS = 1e+15
+   SRelaxBott = 0
+   SRelaxSurf = 0
+/
+&tprofile
+   t_prof_method = 2
+   t_analyt_method = 1
+   z_t1 = 30
+   t_1 = 20
+   z_t2 = 40
+   t_2 = 15
+   t_obs_NN = 0.000256
+   t_prof_file = 'init_t_prof.dat'
+   TRelaxTauM = 1e+15
+   TRelaxTauB = 1e+15
+   TRelaxTauS = 1e+15
+   TRelaxBott = 0
+   TRelaxSurf = 0
+/
+&ext_pressure
+   ext_press_method = 0
+   ext_press_mode = 0
+   ext_press_file = ''
+   PressConstU = 0
+   PressConstV = 0
+   PressHeight = 0
+   PeriodM = 44714
+   AmpMu = 0
+   AmpMv = 0
+   PhaseMu = 0
+   PhaseMv = 0
+   PeriodS = 43200
+   AmpSu = 0
+   AmpSv = 0
+   PhaseSu = 0
+   PhaseSv = 0
+/
+&int_pressure
+   int_press_method = 0
+   int_press_file = ''
+   const_dsdx = 0
+   const_dsdy = 0
+   const_dtdx = 0
+   const_dtdy = 0
+   s_adv = .false.
+   t_adv = .false.
+/
+&extinct
+   extinct_method = 7
+   extinct_file = 'extinct_file.dat'
+   A = 0.55
+   g1 = 0.4164732
+   g2 = 0.1880242
+/
+&w_advspec
+   w_adv_method = 0
+   w_adv_height0 = 0
+   w_adv0 = 0
+   w_adv_file = ''
+   w_adv_discr = 6
+/
+&zetaspec
+   zeta_method = 3
+   zeta_file = 'zeta.dat'
+   zeta_scale = 1
+   zeta_offset = 0
+   zeta_0 = 0
+   period_1 = 44714
+   amp_1 = 0
+   phase_1 = 0
+   period_2 = 43200
+   amp_2 = 0
+   phase_2 = 0
+/
+&wave_nml
+   wave_method = 0
+   wave_file = ''
+   Hs = 0
+   Tz = 0
+   phiw = 0
+/
+&velprofile
+   vel_prof_method = 0
+   vel_prof_file = ''
+   vel_relax_tau = 1e+15
+   vel_relax_ramp = 1e+15
+/
+&eprofile
+   e_prof_method = 0
+   e_obs_const = 1e-12
+   e_prof_file = ''
+/
+&bprofile
+   b_obs_surf = 0
+   b_obs_NN = 1e-04
+   b_obs_sbf = 0
+/
+&o2_profile
+   o2_prof_method = 0
+   o2_units = 1
+   o2_prof_file = ''
+/

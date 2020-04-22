@@ -1,0 +1,58 @@
+!-------------------------------------------------------------------------------
+! scalar or profile data
+!-------------------------------------------------------------------------------
+! variable       [string]
+!                  name of variable - instance_varname[_streamname]
+! file           [string]
+!                  file name
+! index          [integer]
+!                  column # in file
+! relax_tau      [float, unit = s]
+!                  relaxation time
+! constant_value [float]
+!                  constant variable value
+!-------------------------------------------------------------------------------
+&observations
+   variable = 'ergom_po_glenamong',
+   file = 'glen_TP.dat',
+   index = 1,
+   !constant_value = 1,
+   relax_tau = 1e+15,
+/
+&observations
+   variable = 'ergom_po_black',
+   file = 'black_TP.dat',
+   index = 1,
+   !constant_value = 1,
+   relax_tau = 1e+15,
+/
+
+
+!-------------------------------------------------------------------------------
+! scalar or profile data
+!-------------------------------------------------------------------------------
+! variable       [string]
+!                  name of variable - instance_varname[_streamname]
+! file           [string]
+!                  file name
+! index          [integer]
+!                  column # in file
+! relax_tau      [float, unit = s]
+!                  relaxation time
+! constant_value [float]
+!                  constant variable value
+!-------------------------------------------------------------------------------
+&observations
+   variable = 'ergom_nn_black',
+   file = 'black_TN.dat',
+   index = 1,
+   !constant_value = 14,
+   relax_tau = 1e+15,
+/
+&observations
+   variable = 'ergom_nn_glenamong',
+   file = 'glen_TN.dat',
+   index = 1,
+   !constant_value = 14,
+   relax_tau = 1e+15,
+/

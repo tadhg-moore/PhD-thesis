@@ -1,0 +1,91 @@
+&turbulence
+   turb_method = 3
+   tke_method = 2
+   len_scale_method = 8
+   stab_method = 3
+/
+&bc
+   k_ubc = 1
+   k_lbc = 1
+   psi_ubc = 1
+   psi_lbc = 1
+   ubc_type = 1
+   lbc_type = 1
+/
+&turb_param
+   cm0_fix = 0.5477
+   Prandtl0_fix = 0.74
+   cw = 100
+   compute_kappa = .false.
+   kappa = 0.4
+   compute_c3 = .true.
+   Ri_st = 0.25
+   length_lim = .true.
+   galp = 0.53
+   const_num = 5e-04
+   const_nuh = 5e-04
+   k_min = 2.988454e-06
+   eps_min = 1e-12
+   kb_min = 1e-10
+   epsb_min = 1e-14
+/
+&generic
+   compute_param = .false.
+   gen_m = 1
+   gen_n = -0.67
+   gen_p = 3
+   cpsi1 = 1
+   cpsi2 = 1.22
+   cpsi3minus = 0.05
+   cpsi3plus = 1
+   sig_kpsi = 0.8
+   sig_psi = 1.07
+   gen_d = -1.2
+   gen_alpha = -2
+   gen_l = 0.2
+/
+&keps
+   ce1 = 1.44
+   ce2 = 1.92
+   ce3minus = -0.4
+   ce3plus = 1
+   sig_k = 1
+   sig_e = 1.3
+   sig_peps = .false.
+/
+&my
+   e1 = 1.8
+   e2 = 1.33
+   e3 = 1.8
+   sq = 0.2
+   sl = 0.2
+   my_length = 3
+   new_constr = .false.
+/
+&scnd
+   scnd_method = 1
+   kb_method = 1
+   epsb_method = 1
+   scnd_coeff = 7
+   cc1 = 3.6
+   cc2 = 0.8
+   cc3 = 1.2
+   cc4 = 1.2
+   cc5 = 0
+   cc6 = 0.3
+   ct1 = 3.28
+   ct2 = 0.4
+   ct3 = 0.4
+   ct4 = 0
+   ct5 = 0.4
+   ctt = 0.8
+/
+&iw
+   iw_model = 0
+   alpha = 0.7
+   klimiw = 1e-06
+   rich_cr = 0.7
+   numshear = 0.005
+   numiw = 1e-04
+   nuhiw = 1e-05
+/

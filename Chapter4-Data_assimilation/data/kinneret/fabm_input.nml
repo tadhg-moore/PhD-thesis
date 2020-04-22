@@ -1,0 +1,46 @@
+!-------------------------------------------------------------------------------
+! scalar or profile data
+!-------------------------------------------------------------------------------
+! variable       [string]
+!                  name of variable - instance_varname[_streamname]
+! file           [string]
+!                  file name
+! index          [integer]
+!                  column # in file
+! relax_tau      [float, unit = s]
+!                  relaxation time
+! constant_value [float]
+!                  constant variable value
+!-------------------------------------------------------------------------------
+
+&observations
+   variable = 'abiotic_water_sNH4W_jordan',
+   file = 'jordan_chem.dat',
+   index = 1,
+   relax_tau = 1e+15,
+!    constant_value = 3.0
+/
+
+&observations
+   variable = 'abiotic_water_sNO3W_jordan',
+   file = 'jordan_chem.dat',
+   index = 2,
+   relax_tau = 1e+15,
+!    constant_value = 3.0
+/
+
+&observations
+   variable = 'abiotic_water_sNH4W_neger',
+   file = 'neger_chem.dat',
+   index = 1,
+   relax_tau = 1e+15,
+!    constant_value = 3.0
+/
+
+&observations
+   variable = 'abiotic_water_sNO3W_neger',
+   file = 'neger_chem.dat',
+   index = 2,
+   relax_tau = 1e+15,
+!    constant_value = 3.0
+/

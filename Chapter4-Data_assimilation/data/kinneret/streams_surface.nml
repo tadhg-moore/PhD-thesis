@@ -1,0 +1,112 @@
+!-------------------------------------------------------------------------------
+! observed stream profiles
+!-------------------------------------------------------------------------------
+! name   [string]
+!          name of stream
+! method [integer]
+!          inflow/outflow method
+!          1: surface flow
+!          2: bottom flow
+!          3: depth range
+!          4: interleaving - only for inflow
+! zl     [float]
+!          as a negative value
+!          This variable is only used if method = 3
+! zu     [float]
+!          as a negative value
+!          This variable is only used if method = 3
+! Q_file [string]
+!          filename of file with discharge data
+! S_file [string]
+!          filename of file with salinity data
+! T_file [string]
+!          filename of file with temperature data
+! Q_col  [integer]
+!          column in "Q_file" after timestamp
+! S_col  [integer]
+!          column in "S_file" after timestamp
+! T_col  [integer]
+!          column in "T_file" after timestamp
+!-------------------------------------------------------------------------------
+
+&stream
+   name = 'jordan',
+   method = 1,
+   zl = -0.0,
+   zu = -1.0,
+   Q_file = 'jordan.dat',
+   S_file = 'jordan.dat',
+   T_file = 'jordan.dat',
+   Q_col = 1,
+   S_col = 3,
+   T_col = 2,
+/
+
+&stream
+   name = 'neger',
+   method = 1,
+   Q_file = 'neger.dat',
+   S_file = 'neger.dat',
+   T_file = 'neger.dat',
+   Q_col = 1,
+   S_col = 3,
+   T_col = 2,
+/
+
+&stream
+   name = 'yarmuch',
+   method = 1,
+   Q_file = 'yarmuch.dat',
+   S_file = 'yarmuch.dat',
+   T_file = 'yarmuch.dat',
+   Q_col = 1,
+   S_col = 3,
+   T_col = 2,
+/
+
+&stream
+   name = 'ground_inflow',
+   method = 1,
+   Q_file = 'ground_inflow.dat',
+   S_file = 'ground_inflow.dat',
+   T_file = 'ground_inflow.dat',
+   Q_col = 1,
+   S_col = 3,
+   T_col = 2,
+/
+
+&stream
+   name = 'kinnert7',
+   method = 1,
+   Q_file = 'kinnert7.dat',
+   S_file = 'kinnert7.dat',
+   T_file = 'kinnert7.dat',
+   Q_col = 1,
+   S_col = 3,
+   T_col = 2,
+/
+
+&stream
+   name = 'salt_canal',
+   method = 1,
+   Q_file = 'salt_canal.dat',
+   S_file = 'salt_canal.dat',
+   T_file = 'salt_canal.dat',
+   Q_col = 1,
+   S_col = 3,
+   T_col = 2,
+/
+
+&stream
+   name = 'outflow',
+   method = 1,
+   zl = -7.1,
+   zu = -6.1,
+   Q_file = 'outflow.dat',
+   S_file = '',
+   T_file = '',
+   Q_col = 1,
+   S_col = -1,
+   T_col = -1,
+/
+

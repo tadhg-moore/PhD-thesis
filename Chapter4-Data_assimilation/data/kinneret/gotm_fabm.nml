@@ -1,0 +1,17 @@
+&gotm_fabm_nml
+   fabm_calc = .false.
+   cnpar = 1
+   w_adv_discr = 6
+   ode_method = 1
+   split_factor = 1
+   bioshade_feedback = .false.
+   bioalbedo_feedback = .false.
+   biodrag_feedback = .false.
+   repair_state = .true.
+   salinity_relaxation_to_freshwater_flux = .false.
+   no_precipitation_dilution = .false.
+   save_inputs = .false.
+   no_surface = .false.
+   configuration_method = -1
+   bottom_everywhere = .false.
+/
